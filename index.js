@@ -1,9 +1,9 @@
 var maxProfit = function(prices) {
-
-      let minPrice = prices[0];
-    let maxProfit = 0;
+//for loop approach Big O(n)
+  let minPrice = prices[0];
+  let maxProfit = 0;
     
-    for (let i = 0; i < prices.length; i++){
+  for (let i = 0; i < prices.length; i++){
         minPrice = Math.min(prices[i], minPrice);
         maxProfit = Math.max(prices[i] - minPrice, maxProfit);
 
